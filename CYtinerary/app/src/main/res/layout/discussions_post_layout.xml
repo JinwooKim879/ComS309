@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Disc_Post">
+
+    <!-- This is a copy of item_discussion right now. I think the layout for viewing a single post would be similar -->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:context=".Course_Page">
+
+        <TextView
+            android:id="@+id/discCC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CourseCode" />
+
+        <TextView
+            android:id="@+id/discT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title" />
+
+        <TextView
+            android:id="@+id/discD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date" />
+
+        <TextView
+            android:id="@+id/discC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Content" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/text_edit_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reply Message Here"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/btnReply"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Reply to this Discussion" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----------------------------------------------------------------------"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posted Replies:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----------------------------------------------------------------------"/>
+
+        <!-- Should be a list view containing items that are a replies to the original post -->
+        <ListView
+            android:id="@+id/fetched_replies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----------------------------------------------------------------------"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

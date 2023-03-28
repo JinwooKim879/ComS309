@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Assign_Post">
+
+    <!-- This is a copy of item_assignment right now. I think the layout for viewing a single post would be similar -->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:context=".Course_Page">
+
+        <TextView
+            android:id="@+id/assignCC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CourseCode" />
+
+        <TextView
+            android:id="@+id/assignAT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AssignmentTitle" />
+
+        <TextView
+            android:id="@+id/assignDD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DueDate" />
+
+        <TextView
+            android:id="@+id/assignD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description" />
+
+        <TextView
+            android:id="@+id/u_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----------------------------------------------------------------------"/>
+
+        <Button
+            android:id="@+id/btn_select_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a File for Submission"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/btn_submit_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit the Selected File"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/uploads_below"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uploaded Submissions:"/>
+
+        <TextView
+            android:id="@+id/u_line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----------------------------------------------------------------------"/>
+
+        <!-- Should be a list view containing items that are a single string, converted to clickable web links -->
+        <ListView
+            android:id="@+id/fetched_uploads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/u_line3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----------------------------------------------------------------------"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
